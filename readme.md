@@ -38,7 +38,6 @@ This SPA Dashboard act as the decoupled component , which can be installed with 
 <img  src="/public/images/demo/login.png" >
 <img src="/public/images/demo/register.png" >
 <img  src="/public/images/demo/users.png" >
-<img  src="/public/images/demo/dashboard.png" >
 <img  src="/public/images/demo/account_email.png" >
 <img  src="/public/images/demo/account-password.png" >
 
