@@ -5,8 +5,8 @@
 
             <material-card
                 color="green"
-                title="Account"
-                text="Login and security">
+                title="Actualizar Cuenta"
+                text="Cambio de password y correo">
 
                 <v-tabs vertical>
                     <v-tab>
@@ -47,7 +47,7 @@
                                             @click="updateEmail"
 
                                         >
-                                            Update Email
+                                            Actualizar Email
                                         </v-btn>
                                     </v-flex>
                                 </v-layout>
@@ -97,7 +97,7 @@
                                             color="success"
                                             @click="updatePassword"
                                         >
-                                            Update Password
+                                            Actualizar Password
                                         </v-btn>
                                     </v-flex>
                                 </v-layout>

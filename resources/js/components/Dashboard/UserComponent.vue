@@ -4,7 +4,7 @@
         <!--Table View Started-->
         <material-card
             color="green"
-            title="Users"
+            title="Usuarios"
         >
             <v-data-table
                 :items="data"
@@ -14,7 +14,7 @@
                 :server-items-length="totalData">
 
                 <template v-slot:top>
-                    <v-text-field @change="fetch" v-model="options.search" prepend-icon="search" label="Search ......"
+                    <v-text-field @change="fetch" v-model="options.search" prepend-icon="search" label="Buscar"
                                   class="mx-4">
                     </v-text-field>
                 </template>
@@ -68,7 +68,7 @@
                                 <v-col cols="12" sm="12" md="12">
                                     <v-select
                                         v-model="editedItem.role"
-                                        :items="[{'text':'Admin','value':'admin'},{'text':'User','value':'user'}]"
+                                        :items="[{'text':'Admin','value':'admin'},{'text':'User','value':'user'},{'text':'Analista','value':'analista'},{'text':'Recepcion','value':'recepcion'}]"
                                         :rules="requiredRules"
                                         label="Select Role"
                                         :error-messages="errors.first('role')"
@@ -105,10 +105,10 @@
                 /*Data Table Related Variable*/
                 loading: true,
                 headers: [
-                    {text: 'Name', align: 'left', sortable: false, value: 'name'},
-                    {text: 'Email', value: 'email'},
+                    {text: 'Nombre', align: 'left', sortable: false, value: 'name'},
+                    {text: 'E-mail', value: 'email'},
                     {text: 'Role', value: 'role'},
-                    {text: 'Actions', value: 'action', sortable: false},
+                    {text: 'Acciones', value: 'action', sortable: false},
                 ],
                 data: [],
                 totalData: 0,

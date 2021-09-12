@@ -38,13 +38,16 @@
                 <v-flex align-center layout py-2>
 
                     <!--Dashboard-->
-                    <router-link v-ripple class="toolbar-items" to="/">
+
+                    <!--router-link v-ripple class="toolbar-items" to="/">                       
                         <v-icon color="tertiary">mdi-view-dashboard</v-icon>
                     </router-link>
-                    <!--Profile-->
+                    
                     <router-link v-ripple class="toolbar-items" to="/profile">
                         <v-icon color="tertiary">mdi-account</v-icon>
-                    </router-link>
+                    </router-link-->
+
+
                     <!--Logout-->
                     <v-list-item @click="logout">
                         <v-list-item-action>

@@ -1,15 +1,15 @@
 <template>
-    <v-img :src="sidebar" height="100%">
+    
         <v-layout tag="v-list" column>
             <v-list-item avatar>
 
                 <v-list-item-avatar color="white">
-                    <v-img :src="logo" height="34" contain/>
+                    <v-img :src="logo" height="34" width="60" contain/>
                 </v-list-item-avatar>
-
-                <v-list-item-title class="title">
+                    Permisos Extranjeros
+                <!--v-list-item-title class="title">
                     {{getApp.title}}
-                </v-list-item-title>
+                </v-list-item-title-->
             </v-list-item>
 
             <v-divider/>
@@ -25,7 +25,7 @@
                 <v-list-item-title>{{item.name}}</v-list-item-title>
             </v-list-item>
         </v-layout>
-    </v-img>
+    
 </template>
 
 <script>
@@ -43,7 +43,7 @@
         methods: {
             logout() {
                 axios.post(this.serverUrl + "/logout", {})
-                    .then(response => {
+                    .then(response => {                       
                         this.$router.go(0);
                     })
             }
@@ -60,7 +60,9 @@
 </script>
 <style lang="scss">
     #app-drawer {
+        background: #001f3f !important;
         .v-list {
+            background: #001f3f !important;
             border-radius: 4px;
         }
     }
